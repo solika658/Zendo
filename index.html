@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENDO POJECT</title>
+    <link rel="icon" href="https://scontent.fpnh8-3.fna.fbcdn.net/v/t39.30808-1/470238657_122158897586274441_7770881339053737266_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFR7t7Vgms5iszaz4JPtd1lHzX99HW-4LMfNf30db7gs02mOsfhX7ktpKzzKd4wSirLBBTkLf_FbUDfGwEd65K7&_nc_ohc=p8s_Hq4Q2k8Q7kNvgHpPilJ&_nc_zt=24&_nc_ht=scontent.fpnh8-3.fna&_nc_gid=ANpDA1m4ako9O9euo4uGpYP&oh=00_AYD97WdUg_3IXlt8c-7BVcrDbmJe8GDljdFCgqnpf-139w&oe=676D6FF8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img width="140px" src="https://zandokh.com/image/catalog/avethemes/zando-logo-small.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                <a class="nav-link active" aria-current="page" href="#" >Contact</a>
+              </li>
+              
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+       </nav>
+   </header>
+        <!-- Modal contact-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="username" class="form-label">Name</label>
+                              <input type="text" name="" id="username" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" name="" id="email" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="phone" class="form-label">Phone Number</label>
+                              <input type="text" name="" id="phone" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="address" class="form-label">Address</label>
+                              <input type="text" name="" id="address" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-group">
+                              <label for="message" class="form-label">Message</label>
+                              <textarea name="" id="message" class="form-control"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img width="200px" height="600px" src="https://scontent.fpnh8-1.fna.fbcdn.net/v/t39.30808-6/455256584_938919788276048_5546956464718924850_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeELlIyK6fdDeb9ksRS7Z6A2yfq220NAIoLJ-rbbQ0AigpNmOoIAIng0AJ7Y8cEIqpZ2q9rsGapWc14iY3tNogdw&_nc_ohc=Q_fImCY0tvQQ7kNvgGGtJyv&_nc_zt=23&_nc_ht=scontent.fpnh8-1.fna&_nc_gid=AvYan9Ndjir8R1xMn89AXhJ&oh=00_AYCljInNNfHCT46FkO96skzr92-fSPE1tD3f-pOYm_2YXQ&oe=676D87EA" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img width="200px" height="600px" src="https://scontent.fpnh8-1.fna.fbcdn.net/v/t39.30808-6/454345146_934651142036246_787982897233306645_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEjInltufxvBefw5jAHVxYB3Tq0AAJh6lDdOrQAAmHqUMhD6I6AC9_5ikBz9_jiTqv0jM3jsQ4tMDzWlqACWanG&_nc_ohc=ZuoFGuc5XxMQ7kNvgFHk5TX&_nc_zt=23&_nc_ht=scontent.fpnh8-1.fna&_nc_gid=AqZoi-fEsbcvakYPgM40EeK&oh=00_AYBkJMMjAM0RtKH3s7WPcaGzE8Cp3vaB_KamRPMxj88-pQ&oe=676D75EC" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img width="200px" height="600px" src="https://scontent.fpnh8-2.fna.fbcdn.net/v/t39.30808-6/426400614_817673100400718_7985797517987557250_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeFUaCun4wNiOwPALHQYJ5KUCSZFoQwtJzoJJkWhDC0nOptH5x17sIuqRH56SGJhEfBaauFh0Ylola_pD3v8PTdz&_nc_ohc=vnETVgyu_pIQ7kNvgH1fWCC&_nc_zt=23&_nc_ht=scontent.fpnh8-2.fna&_nc_gid=A_tjtQorAYqB6zyIVPXumlW&oh=00_AYDmOW7mM9CaYORvi3NFuu39WRrpGorsY7GOnD8_vWaoKQ&oe=676D7C84" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <section class="container-fluid">
+              <Article class="container mt-3">
+                <h2 >New Products</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <h2 class="mt-2" >Popular Product</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-6">
+                    <div class="card">
+                      <img src="https://zandokh.com/image/cache/catalog/products/2024-07/2112404016/Shirt%20(10)-cr-450x672.jpg" class="card-img-top" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title">Price: 20$</h5>
+                        <p class="card-text">Regular Shirt</p>
+                        <div class="icon">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </Article>
+        </section>
+      
+     
+</body>
+<footer class="container-fluid bg-dark mt-5 p-3">
+    <div class="container p-0">
+        <div class="row">
+            <div class="col-xl-4 col-12 footer-logo mt-3">
+                <h4 class="text-light text-start">Zando APP</h4>
+                <img class="rounded" width="120px"  src="https://zandokh.com/image/catalog/logo/qr_code_app.png" style="margin-top: 10px; " alt="">
+            </div>
+            <div class="col-xl-4 col-12 mt-3">
+                <h4 class="text-light text-center">Follow US</h4>
+                <div class="icon">
+                    <p class="text-light text-center"><i class="fa-brands fa-facebook me-2"></i>Facebook</p>
+                    <p class="text-light text-center"><i class="fa-brands fa-instagram me-2"></i>Instagram</p>
+                    <p class="text-light text-center"><i class="fa-brands fa-youtube me-2"></i>YouTube</p>
+                    <p class="text-light text-center"><i class="fa-brands fa-tiktok me-2"></i>Tik Tok</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-12 mt-3">
+                <h4 class="text-light text-center">CUSTOMER SERVICES</h4>
+                <div class="icon">
+                    <p class="text-light text-center"><i class="fa-regular fa-circle-question me-2"></i>Online exchange policy</p>
+                    <p class="text-light text-center"><i class="fa-solid fa-shield-halved me-2"></i>Privacy Policy</p>
+                    <p class="text-light text-center"><i class="fa-solid fa-phone me-2"></i>FAQs & guides</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+</html>
